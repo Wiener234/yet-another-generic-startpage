@@ -21,16 +21,18 @@ export const initialGeneralSettings = {
   fontSize: 1,
 }
 
-export const initialTheme = getTheme("nord")
+export const initialTheme = getTheme("dracula")
 
 export const initialSearchSettings = {
   placeholder: "Search the web",
-  engine: "google" as SearchEngineName,
+  engine: "duckduckgo" as SearchEngineName,
   forwardingLookup: {
     "/": "/",
     deepl: "https://deepl.com/",
     reddit: "https://reddit.com/",
     maps: "https://maps.google.com/",
+    github: "https://github.com/",
+    wiener234: "https://github.com/wiener234",
   } as SearchOptions["forwardingLookup"],
 }
 
@@ -47,40 +49,36 @@ export const initialSurfaceSettings = {
 
 export const initialBookmarks: InitialBookmarkGroup[] = [
   {
-    label: "reddit",
+    label: "uni",
     bookmarks: [
       {
-        label: "r/startpages",
-        url: "https://www.reddit.com/r/startpages/",
+        label: "moodle",
+        url: "https://moodle2.uni-potsdam.de/",
       },
       {
-        label: "r/typescript",
-        url: "https://www.reddit.com/r/typescript/",
+        label: "puls",
+        url: "https://puls.uni-potsdam.de/",
       },
       {
-        label: "r/reactjs",
-        url: "https://www.reddit.com/r/reactjs/",
+        label: "fsr",
+        url: "https://fsr.cs.uni-potsdam.de/",
+      },
+      {
+        label: "institut",
+        url: "https://www.uni-potsdam.de/de/cs/",
       },
     ],
   },
   {
-    label: "design tools",
+    label: "dev",
     bookmarks: [
       {
-        label: "pixlrx",
-        url: "https://pixlr.com/x/",
+        label: "github",
+        url: "https://github.com",
       },
       {
-        label: "image enlarger",
-        url: "https://bigjpg.com/en",
-      },
-      {
-        label: "haikei",
-        url: "https://app.haikei.app/",
-      },
-      {
-        label: "css gradients",
-        url: "https://larsenwork.com/easing-gradients/",
+        label: "github personal",
+        url: "https://github.com/wiener234",
       },
     ],
   },
